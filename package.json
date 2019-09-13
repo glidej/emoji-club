@@ -1,0 +1,17 @@
+{
+  "name": "emoji-club",
+  "version": "1.0.0",
+  "description": "",
+  "main": "validate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/web-api": "^5.1.0",
+    "@slack/webhook": "^5.0.1",
+    "moment": "^2.24.0",
+    "redis": "^2.8.0"
+  }
+}
