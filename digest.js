@@ -38,7 +38,7 @@ const sendDigest = async (oldEmojis, newEmojis) => {
     const random = meow_emojis[Math.floor(Math.random()*meow_emojis.length)];
     msg = `There are *no new emojis* to discover today :meow_sad:, but here's one of my favorites: :${random}:`
   } else {
-    const emojis = newEmojis.map((emoji) => `:${emoji}:`).join(' ');
+    const emojis = newEmojis.map((emoji) => `:${emoji}: — \`:${emoji}:\``).join('\n');
     msg = `There are *${newEmojis.length}* new emojis today! :meow_happy_paws:
 ${emojis}`;
   }
