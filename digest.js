@@ -10,7 +10,7 @@ const { sendDigest, sendRandomEmoji } = require('./lib/msg');
   const difference = getDifference(today, yesterday);
   const newEmojis = Object.keys(difference);
 
-  if (!newEmojis) {
+  if (newEmojis.length === 0) {
     return await sendRandomEmoji(today).then(() => process.exit());
   }
 
