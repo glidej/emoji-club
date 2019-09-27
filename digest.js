@@ -14,5 +14,5 @@ const { sendDigest, sendRandomEmoji } = require('./lib/msg');
     return await sendRandomEmoji(today).then(() => process.exit());
   }
 
-  return await sendDigest(newEmojis).then(() => process.exit());
+  return await sendDigest(difference).then(() => process.exit());
 })();
